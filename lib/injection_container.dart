@@ -1,5 +1,5 @@
 import 'package:get_it/get_it.dart';
 
-final serviceLocator = GetIt.instance;
+final GetIt serviceLocator = GetIt.instance;
 
 Future<void> init() async {}

@@ -32,7 +32,7 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
+  cupertino_icons: ^1.0.4
 
   #The following adds flutter_bloc as state management solution
   #package url:- https://pub.dev/packages/flutter_bloc
@@ -73,6 +73,14 @@ dependencies:
   #package url:- https://pub.dev/packages/mockito
   mockito: ^5.2.0
 
+  #Following converts enums to String
+  #package url:- https://pub.dev/packages/enum_to_string
+  enum_to_string: ^2.0.1
+
+  #Collections and utilities functions and classes related to collections.
+  #package url:- https://pub.dev/packages/collection
+  collection: ^1.15.0
+
   flutter_localizations:
     sdk: flutter
 
@@ -92,7 +100,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^1.0.0
+  flutter_lints: ^1.0.4
 
   #A build system for Dart code generation and modular compilation.
   #package url:- https://pub.dev/packages/build_runner

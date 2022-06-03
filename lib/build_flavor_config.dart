@@ -1,9 +1,7 @@
 
 enum BuildFlavor{
-  DEV,
-  PRODUCTION
+  dev,
+  prod
 }
 
-class BuildFavorConfig{
-
-}
+class BuildFavorConfig{}

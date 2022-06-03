@@ -32,11 +32,8 @@ samples, guidance on mobile development, and a full API reference.
 ## Creating project with the skeleton template
 
 ###### Run this command in terminal
-
 ```flutter pub global run flutter_create -a appname -u https://github.com/rspl-nilesh/flutter_custom_template.git```
-
 ######              or
 ```pub global run flutter_create -a appname -u https://github.com/rspl-nilesh/flutter_custom_template.git```
-
 ######              or
 ```flutter_create -a appname -u https://github.com/rspl-nilesh/flutter_custom_template.git```

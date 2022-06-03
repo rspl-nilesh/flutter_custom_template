@@ -25,13 +25,14 @@ samples, guidance on mobile development, and a full API reference.
 
 <sub> If gives path related Warning! Then </sub>
 ```vim ~/.bashrc```
-**Add in the file **
+###### Add in the file
 <sub>export PATH="$PATH":"$HOME/flutter/.pub-cache/bin"</sub>
 <sub>Press ```:wq!``` and enter</sub>
 
-##Creating project with the skeleton template
+## Creating project with the skeleton template
 
-######Run this command in terminal
+###### Run this command in terminal
+
 ```flutter pub global run flutter_create -a appname -u https://github.com/rspl-nilesh/flutter_custom_template.git```
 
 ######              or

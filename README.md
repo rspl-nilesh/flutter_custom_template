@@ -6,7 +6,7 @@ A custom skeleton template for flutter.
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+This project is a skeleton template for creating new flutter project using it.
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
@@ -14,3 +14,28 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Installation
+[online documentation](https://pub.dev/packages/flutter_create)
+**If you want to use flutter_create on the command line, install it using pub ```global activate:```**
+
+```flutter pub global activate flutter_create```
+######              or
+```pub global activate flutter_create```
+
+<sub> If gives path related Warning! Then </sub>
+```vim ~/.bashrc```
+**Add in the file **
+<sub>export PATH="$PATH":"$HOME/flutter/.pub-cache/bin"</sub>
+<sub>Press ```:wq!``` and enter</sub>
+
+##Creating project with the skeleton template
+
+######Run this command in terminal
+```flutter pub global run flutter_create -a appname -u https://github.com/rspl-nilesh/flutter_custom_template.git```
+
+######              or
+```pub global run flutter_create -a appname -u https://github.com/rspl-nilesh/flutter_custom_template.git```
+
+######              or
+```flutter_create -a appname -u https://github.com/rspl-nilesh/flutter_custom_template.git```

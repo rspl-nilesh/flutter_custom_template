@@ -1,6 +1,6 @@
 import 'package:logger/logger.dart';
 
-class CustomPrinter extends LogPrinter {
+class CustomPrinter implements LogPrinter {
   @override
   List<String> log(LogEvent event) {
     var color = PrettyPrinter.levelColors[event.level];
@@ -11,5 +11,15 @@ class CustomPrinter extends LogPrinter {
       event.message,
       dateTime.millisecondsSinceEpoch.toString()
     ];
+  }
+
+  @override
+  void destroy() {
+    // TODO: implement destroy
+  }
+
+  @override
+  void init() {
+    // TODO: implement init
   }
 }

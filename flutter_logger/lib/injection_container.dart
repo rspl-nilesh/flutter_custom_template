@@ -15,17 +15,17 @@ Future<void> init() async {
   serviceLocator.registerLazySingleton<LoggerConfig>(
       () => LoggerConfigurationImpl(sharedPreference: serviceLocator()));
 
-  serviceLocator.registerLazySingleton<CustomPrinter>(() => CustomPrinter());
+  serviceLocator.registerLazySingleton<LogPrinter>(() => CustomPrinter());
 
-  serviceLocator.registerLazySingleton<CustomLogFilter>(
+  serviceLocator.registerLazySingleton<LogFilter>(
       () => CustomLogFilter(loggerConfig: serviceLocator()));
 
   serviceLocator
-      .registerLazySingleton<CustomLogOutput>(() => CustomLogOutput());
+      .registerLazySingleton<LogOutput>(() => CustomLogOutput());
 
   serviceLocator.registerLazySingleton(
     () => Logger(
-      printer: CustomPrinter(),
+      printer: serviceLocator(),
       filter: CustomLogFilter(loggerConfig: serviceLocator()),
       output: CustomLogOutput(),
     ),

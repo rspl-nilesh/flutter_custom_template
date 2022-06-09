@@ -1,7 +1,7 @@
 import 'package:flutter_logger/configuration/logger_config.dart';
 import 'package:logger/logger.dart';
 
-class CustomLogFilter extends LogFilter {
+class CustomLogFilter implements LogFilter {
   final LoggerConfig loggerConfig;
 
   CustomLogFilter({required this.loggerConfig});
@@ -9,8 +9,6 @@ class CustomLogFilter extends LogFilter {
   @override
   bool shouldLog(LogEvent event) {
     var shouldLog = false;
-    print(
-        'shouldLog ${event.level}\n ${loggerConfig.getLogLevels()} and ${loggerConfig.getLogLevels().contains(event.level)}');
 
     bool _isLevelSet() {
       return loggerConfig.getLogLevels().contains(event.level);
@@ -28,5 +26,18 @@ class CustomLogFilter extends LogFilter {
       }());
     }
     return shouldLog;
+  }
+
+  @override
+  Level? level;
+
+  @override
+  void destroy() {
+    // TODO: implement destroy
+  }
+
+  @override
+  void init() {
+    // TODO: implement init
   }
 }

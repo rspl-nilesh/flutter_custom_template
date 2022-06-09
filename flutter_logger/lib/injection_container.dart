@@ -26,8 +26,8 @@ Future<void> init() async {
   serviceLocator.registerLazySingleton(
     () => Logger(
       printer: serviceLocator(),
-      filter: CustomLogFilter(loggerConfig: serviceLocator()),
-      output: CustomLogOutput(),
+      filter: serviceLocator(),
+      output: serviceLocator(),
     ),
   );
 

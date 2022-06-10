@@ -1,3 +1,4 @@
+import 'package:example_app/example_app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_template/core/utils/ui_extensions.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -47,7 +48,7 @@ class MainPage extends StatelessWidget {
         onGenerateRoute: (RouteSettings routeSettings) =>
             MaterialPageRoute<void>(
           settings: routeSettings,
-          builder: (BuildContext context) => const HomePage(),
+          builder: (BuildContext context) => const ExampleApp(),//TODO this is example app page. Remove this and put your main page
         ),
       );
 }

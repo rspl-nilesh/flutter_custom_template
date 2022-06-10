@@ -15,9 +15,9 @@ abstract class LoggerConfig {
 
   bool isLogInFilesAllowed();
 
-  Future<void> setLogFileDirectory({required String directory});
+  Future<void> setLogFilePath({required String directory});
 
-  String getLogFileDirectory();
+  String getLogFilePath();
 
   Future<void> setAutoClearDuration({required int days});
 

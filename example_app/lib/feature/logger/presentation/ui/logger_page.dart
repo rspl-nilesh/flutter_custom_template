@@ -27,15 +27,20 @@ class _LoggerPageBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Container(
-        child: ElevatedButton(
-          onPressed: () {
-            BlocProvider.of<LoggerBloc>(context).add(LoggerEvent(
-                level: Level.debug, message: "this is debug messge"));
-          },
-          child: Text('Log d'),
-        ),
+      child: Column(
+        children: [
+          ElevatedButton(
+            onPressed: () {
+              BlocProvider.of<LoggerBloc>(context).add(LoggerEvent(
+                  level: Level.debug, message: "this is debug messge"));
+            },
+            child: Text('Log d'),
+          ),
+        ],
       ),
     );
   }
+
+
+
 }

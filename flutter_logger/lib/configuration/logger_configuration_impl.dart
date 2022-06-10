@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter_logger/configuration/default_config_values.dart';
 import 'package:flutter_logger/configuration/logger_config.dart';
 import 'package:logger/src/logger.dart';
@@ -9,7 +11,7 @@ const String _prefLogMode = "log_mode";
 const String _prefAutoClearDuration = "auto_clear_duration";
 const String _prefLogLevels = "log_levels";
 const String _prefLogInFilesAllowed = "log_in_files_allowed";
-const String _prefLogFileDirectory = "log_file_directory";
+const String _prefLogFilePath = "log_file_path";
 
 class LoggerConfigurationImpl implements LoggerConfig {
   final SharedPreferences sharedPreference;
@@ -44,10 +46,7 @@ class LoggerConfigurationImpl implements LoggerConfig {
       DEFAULT_AUTO_CLEAR_DURATION;
 
   @override
-  String getLogFileDirectory() {
-    // TODO: implement getLogFileDirectory
-    throw UnimplementedError();
-  }
+  String getLogFilePath() => sharedPreference.getString(_prefLogFilePath) ?? "";
 
   @override
   List<Level> getLogLevels() {
@@ -69,8 +68,8 @@ class LoggerConfigurationImpl implements LoggerConfig {
   }
 
   @override
-  Future<void> setLogFileDirectory({required String directory}) async {
-    await sharedPreference.setString(_prefLogFileDirectory, directory);
+  Future<void> setLogFilePath({required String directory}) async {
+    await sharedPreference.setString(_prefLogFilePath, directory);
   }
 
   @override

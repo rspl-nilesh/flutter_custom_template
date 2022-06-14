@@ -33,10 +33,10 @@ This project is a skeleton template for creating new flutter project using it.
 
 ## Plugins
 
-flutter_custom_library is currently extended with the following libraries.
+flutter_custom_library is currently extended with the following packages.
 Instructions on how to use them in your own application are linked below.
 
-| Plugin | README |
+| Package | Package URL |
 | ------ | ------ |
 | cupertino_icons | https://pub.dev/packages/cupertino_icons|
 | flutter_bloc | https://pub.dev/packages/flutter_bloc|

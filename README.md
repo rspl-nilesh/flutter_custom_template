@@ -38,20 +38,20 @@ Instructions on how to use them in your own application are linked below.
 
 | Plugin | README |
 | ------ | ------ |
-| cupertino_icons | [https://pub.dev/packages/cupertino_icons]|
-| flutter_bloc | [https://pub.dev/packages/flutter_bloc]|
-| equatable | [https://pub.dev/packages/equatable]|
-| get_it | [https://pub.dev/packages/get_it]|
-| dio | [https://pub.dev/packages/dio]|
-| simple_connection_checker | [https://pub.dev/packages/simple_connection_checker]|
-| shared_preferences | [https://pub.dev/packages/shared_preferences]|
-| mockito | [https://pub.dev/packages/mockito]|
-| enum_to_string | [https://pub.dev/packages/enum_to_string]|
+| cupertino_icons | https://pub.dev/packages/cupertino_icons|
+| flutter_bloc | https://pub.dev/packages/flutter_bloc|
+| equatable | https://pub.dev/packages/equatable|
+| get_it | https://pub.dev/packages/get_it|
+| dio | https://pub.dev/packages/dio|
+| simple_connection_checker | https://pub.dev/packages/simple_connection_checker|
+| shared_preferences | https://pub.dev/packages/shared_preferences|
+| mockito | https://pub.dev/packages/mockito|
+| enum_to_string | https://pub.dev/packages/enum_to_string|
 | collection | https://pub.dev/packages/collection|
-| logger | [https://pub.dev/packages/logger]|
-| path_provider | [https://pub.dev/packages/path_provider]|
-| flutter_email_sender | [https://pub.dev/packages/flutter_email_sender]|
-| flutter_archive | [https://pub.dev/packages/flutter_archive]|
+| logger | https://pub.dev/packages/logger|
+| path_provider | https://pub.dev/packages/path_provider|
+| flutter_email_sender | https://pub.dev/packages/flutter_email_sender|
+| flutter_archive | https://pub.dev/packages/flutter_archive|
 
 ## Installation
 [online documentation](https://pub.dev/packages/flutter_create)
@@ -127,4 +127,4 @@ flutter run --flavor dev -t lib/main_dev.dart
 
 Follow this link to setup the configuration for different flavors. **Careful with the flavor name and the flavor entry point**
 
-[https://medium.com/@vo9312/flutter-series-part-1-flutter-flavors-setup-bb6aba1586ac]
+https://medium.com/@vo9312/flutter-series-part-1-flutter-flavors-setup-bb6aba1586ac

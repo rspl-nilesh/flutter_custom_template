@@ -32,12 +32,8 @@ class CustomLogFilter implements LogFilter {
   Level? level;
 
   @override
-  void destroy() {
-    // TODO: implement destroy
-  }
+  void destroy() {}
 
   @override
-  void init() {
-    // TODO: implement init
-  }
+  void init() {}
 }

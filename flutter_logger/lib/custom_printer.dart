@@ -1,25 +1,25 @@
 import 'package:logger/logger.dart';
-
+import 'package:intl/intl.dart';
 class CustomPrinter implements LogPrinter {
   @override
   List<String> log(LogEvent event) {
-    var color = PrettyPrinter.levelColors[event.level];
     var emoji = PrettyPrinter.levelEmojis[event.level];
     final DateTime dateTime = DateTime.now();
     return [
       emoji ?? "",
       event.message,
-      dateTime.millisecondsSinceEpoch.toString()
+      dateTime.toReadableTime()
     ];
   }
 
   @override
-  void destroy() {
-    // TODO: implement destroy
-  }
+  void destroy() {}
 
   @override
-  void init() {
-    // TODO: implement init
+  void init() {}
+}
+extension DateFormatter on DateTime{
+  String toReadableTime(){
+    return DateFormat("dd-MM-yyyy HH:mm:ss").format(this);
   }
 }

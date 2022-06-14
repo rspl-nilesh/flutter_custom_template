@@ -1,10 +1,20 @@
 part of 'logger_bloc.dart';
 
-abstract class LoggerState extends Equatable {
-  const LoggerState();
-}
+class LoggerState extends Equatable {
+  final Resource<String>? sendEmailLogResource;
 
-class LoggerInitial extends LoggerState {
+  const LoggerState({this.sendEmailLogResource});
+
   @override
-  List<Object> get props => [];
+  List<Object?> get props => [sendEmailLogResource];
+
+  factory LoggerState.initial() {
+    return const LoggerState();
+  }
+
+  LoggerState copy({Resource<String>? sendEmailLogResource}) {
+    return LoggerState(
+        sendEmailLogResource:
+            sendEmailLogResource ?? this.sendEmailLogResource);
+  }
 }

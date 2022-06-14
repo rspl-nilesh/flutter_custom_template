@@ -47,7 +47,7 @@ Instructions on how to use them in your own application are linked below.
 | shared_preferences | [https://pub.dev/packages/shared_preferences]|
 | mockito | [https://pub.dev/packages/mockito]|
 | enum_to_string | [https://pub.dev/packages/enum_to_string]|
-| collection | [https://pub.dev/packages/collection]|
+| collection | https://pub.dev/packages/collection|
 | logger | [https://pub.dev/packages/logger]|
 | path_provider | [https://pub.dev/packages/path_provider]|
 | flutter_email_sender | [https://pub.dev/packages/flutter_email_sender]|

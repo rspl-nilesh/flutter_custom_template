@@ -4,6 +4,9 @@ import 'package:flutter_custom_template/core/utils/ui_extensions.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
+final GlobalKey<ScaffoldMessengerState> snackbarKey =
+    GlobalKey<ScaffoldMessengerState>();
+
 class MainPage extends StatelessWidget {
   const MainPage({Key? key}) : super(key: key);
 
@@ -14,7 +17,7 @@ class MainPage extends StatelessWidget {
         // returns to the app after it has been killed while running in the
         // background.
         restorationScopeId: "app",
-
+        scaffoldMessengerKey: snackbarKey,
         // Provide the generated AppLocalizations to the MaterialApp. This
         // allows descendant Widgets to display the correct translations
         // depending on the user's locale.
@@ -48,7 +51,8 @@ class MainPage extends StatelessWidget {
         onGenerateRoute: (RouteSettings routeSettings) =>
             MaterialPageRoute<void>(
           settings: routeSettings,
-          builder: (BuildContext context) => const ExampleApp(),//TODO this is example app page. Remove this and put your main page
+          builder: (BuildContext context) =>
+              const HomePage(),
         ),
       );
 }

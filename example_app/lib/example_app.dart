@@ -5,8 +5,7 @@ class ExampleApp extends StatelessWidget {
   const ExampleApp({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(),
-      body: const LoggerPage(),
+  Widget build(BuildContext context) => Container(
+      child: const LoggerPage(),
     );
 }

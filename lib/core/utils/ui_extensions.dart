@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_custom_template/app_page.dart';
 
 extension Alerts on BuildContext {
   Future<void> showAlertDialog({
@@ -25,6 +26,6 @@ extension Alerts on BuildContext {
 
 extension SnackbarMessage on BuildContext {
   void showSnackBar({required String message}) {
-    ScaffoldMessenger.of(this).showSnackBar(SnackBar(content: Text(message)));
+    snackbarKey.currentState?.showSnackBar(SnackBar(content: Text(message)));
   }
 }

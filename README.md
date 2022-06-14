@@ -4,8 +4,6 @@ A custom skeleton template for flutter.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
 This project is a skeleton template for creating new flutter project using it.
 
 ## Features

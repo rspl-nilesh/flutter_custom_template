@@ -8,7 +8,7 @@ This project is a starting point for a Flutter application.
 
 This project is a skeleton template for creating new flutter project using it.
 
-## Feature
+## Features
 
 
 - Clean Architecture folder structure

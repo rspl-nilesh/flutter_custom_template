@@ -86,6 +86,13 @@ pub global run flutter_create -a appname -u https://github.com/rspl-nilesh/flutt
 flutter_create -a appname -u https://github.com/rspl-nilesh/flutter_custom_template.git
 ```
 
+## Flutter Lint
+
+To analyze, Run
+
+```sh
+flutter analyze
+```
 
 ## Flavors
 

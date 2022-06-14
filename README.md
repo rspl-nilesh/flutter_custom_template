@@ -10,6 +10,27 @@ This project is a skeleton template for creating new flutter project using it.
 
 ## Feature
 
+
+- Clean Architecture folder structure
+- Most commonly used libraries
+- Flutter Lint configuration and predefined rules
+- BLoC (Business Logic Component) design patter
+- Alert and Snackbar Utility
+- Localization setup
+- Setup of Flavor
+- Logger
+
+
+#### Features of logger
+- Log on console as well as file
+- Able to change log level and turn off logs
+- Able to export log files in email
+- Automatic log clearing mechanism
+- Log entry with readable time
+- Zip files all log files
+- Creates a new log file for everyday
+
+
 ## Installation
 [online documentation](https://pub.dev/packages/flutter_create)
 **If you want to use flutter_create on the command line, install it using pub ```global activate:```**

@@ -98,7 +98,7 @@ class LogFileProviderImpl implements LogFileProvider {
     List<String> nonDeletableFiles = [];
     DateTime _currentDate = DateTime.now();
     Directory _dir = File(loggerConfig.getLogFilePath()).parent;
-    for (int i = 6; i >= 0; i--) {
+    for (int i = loggerConfig.getAutoClearDuration(); i >= 0; i--) {
       DateTime _clearanceStartDate =
       DateTime(_currentDate.year, _currentDate.month, _currentDate.day - i);
       final _fileName = "${_clearanceStartDate.day}_${_clearanceStartDate

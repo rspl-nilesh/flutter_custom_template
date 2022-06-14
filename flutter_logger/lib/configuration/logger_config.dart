@@ -15,7 +15,7 @@ abstract class LoggerConfig {
 
   bool isLogInFilesAllowed();
 
-  Future<void> setLogFilePath({required String directory});
+  Future<void> setLogFilePath({required String filePath});
 
   String getLogFilePath();
 
@@ -26,4 +26,16 @@ abstract class LoggerConfig {
   Future<void> setLogLevels({required List<Level> levels});
 
   List<Level> getLogLevels();
+
+  Future<void> setLogRecipientMailId({required List<String> emailIds});
+
+  List<String> getLogRecipientMailIds();
+
+  Future<void> setLogEmailBody({required String emailBody});
+
+  String getLogEmailBody();
+
+  Future<void> setLogEmailSubject({required String emailSubject});
+
+  String getLogEmailSubject();
 }

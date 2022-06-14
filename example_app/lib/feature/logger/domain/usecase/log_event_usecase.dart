@@ -1,5 +1,5 @@
 import 'package:example_app/usecase.dart';
-import 'package:flutter_logger/flutter_logger.dart';
+import 'package:flutter_logger/flutter_logger/flutter_logger.dart';
 import 'package:logger/logger.dart';
 
 class LogEventUsecase extends UseCase<void, LogParams> {

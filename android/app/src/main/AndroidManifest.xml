@@ -1,5 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.rspl.flutter_custom_template.flutter_custom_template">
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.SENDTO" />
+            <data android:scheme="mailto" />
+        </intent>
+    </queries>
+
    <application
         android:label="flutter_custom_template"
         android:name="${applicationName}"

@@ -1,10 +1,10 @@
 import 'package:logger/logger.dart';
 
-const DEFAULT_AUTO_CLEAR_DURATION = 7;
-const DETAULT_AUTO_CLEAR = false;
-const DEFAULT_CLEAR_LOGS = false;
-const DEFAULT_LOGS_IN_FILE_ALLOWED = false;
-const DEFAULT_LOG_LEVELS = [
+const defaultAutoClearDuration = 7;
+const defaultAutoClear = false;
+const defaultClearLogs = false;
+const defaultLogsInFileAllowed = false;
+const defaultLogLevels = [
   Level.verbose,
   Level.debug,
   Level.info,

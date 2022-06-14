@@ -38,7 +38,6 @@ Instructions on how to use them in your own application are linked below.
 
 | Package | Package URL |
 | ------ | ------ |
-| cupertino_icons | https://pub.dev/packages/cupertino_icons|
 | flutter_bloc | https://pub.dev/packages/flutter_bloc|
 | equatable | https://pub.dev/packages/equatable|
 | get_it | https://pub.dev/packages/get_it|

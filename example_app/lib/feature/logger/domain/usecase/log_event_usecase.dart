@@ -9,8 +9,20 @@ class LogEventUsecase extends UseCase<void, LogParams> {
 
   @override
   Future<void> call(LogParams params) async {
-    if (params.level == Level.debug) {
-      flutterLogger.logD(classRef: this, message: params.message);
+    switch (params.level) {
+      case Level.error:{
+          flutterLogger.logE(message: params.message);
+          break;
+        }
+      case Level.info: {
+        flutterLogger.logI(message: params.message);
+        break;
+      }
+      case Level.warning: {
+        flutterLogger.logW(message: params.message);
+        break;
+      }
+      default : flutterLogger.logD(message: params.message);
     }
   }
 }

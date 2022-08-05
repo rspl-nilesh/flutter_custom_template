@@ -19,9 +19,23 @@ class FlutterLoggerImpl implements FlutterLogger {
     required this.logFileProvider});
 
   @override
-  void logD({required Object classRef, required String message}) {
+  void logD({required String message}) {
     logger.d(message);
+  }
+
+  @override
+  void logE({required String message}) {
     logger.e(message);
+  }
+
+  @override
+  void logI({required String message}) {
+    logger.i(message);
+  }
+
+  @override
+  void logW({required String message}) {
+    logger.w(message);
   }
 
   @override

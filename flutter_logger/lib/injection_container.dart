@@ -29,6 +29,7 @@ Future<void> init() async {
   serviceLocator.registerLazySingleton<LogOutput>(
     () => CustomLogOutput(
       logFileProvider: serviceLocator(),
+      loggerConfig: serviceLocator()
     ),
   );
 

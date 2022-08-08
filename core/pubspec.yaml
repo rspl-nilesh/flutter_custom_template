@@ -63,9 +63,6 @@ dependencies:
   #package url:- https://pub.dev/packages/collection
   collection: ^1.15.0
 
-  # Small, easy to use and extensible logger which prints beautiful logs.
-  # package url:- https://pub.dev/packages/logger
-  logger: ^1.1.0
 
   flutter_localizations:
     sdk: flutter
